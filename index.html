@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product landingpage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="overlay"></div>
+      <img
+        src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=2614&q=80"
+        alt="product image"
+      />
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100">
+            <h1 class="display-3">Unlimited online courses</h1>
+
+            <p class="lead mb-0">Watch anywhere. Advance ur career.</p>
+
+            <p>
+              <a href="#checkout" class="btn btn-danger my-5 px-4 py-2"> Enroll now </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header  -->
+    <div class="pricing-header text-center text-white py-3">
+      <h2 class="display-4">Pricing</h2>
+    </div>
+
+    <div class="container">
+      <div class="card-deck mb-5 py-5 text-center mx-1 px-1">
+        <div class="card shadow-sm">
+          <div class="card-header">
+            <h3 class="">Sale</h3>
+          </div>
+          <!-- end card header  -->
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">
+              $99.99
+              <br />
+              <small class="text-muted">Regularly $999</small>
+            </h3>
+            <ul class="list-unstyled">
+              <li>Lifetime access</li>
+              <li>Certificate of completion</li>
+              <li>Project based curriculum</li>
+              <li>8,000,000 copies sold</li>
+            </ul>
+
+            <button type="button" class="btn btn-lg btn-outline-secondary">
+              Buy now
+            </button>
+          </div>
+          <!-- end card body  -->
+        </div>
+      </div>
+    </div>
+    <!-- end pricing section  -->
+    <div id="checkout ">
+      <div class="header">
+        <h2 class="display-4 text-white text-center">Checkout</h2>
+      </div>
+
+      <div class="row px-5 mx-5 py-5">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted position-relative"> Your cart </span>
+            <span class="badge rounded-pill bg-info">1</span>
+          </h4>
+          <ul class="list-group mb-1">
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h5 class="">
+                  Promo code
+                  <small style="display: block">SALE</small>
+                </h5>
+              </div>
+              <span class="text-success"> $-405.09 </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span> Total(USD) </span>
+              <strong> $49.06 </strong>
+            </li>
+          </ul>
+          <form class="card p-3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code" />
+              <div class="input-group-append"></div>
+              <button class="btn btn-secondary" type="submit">Redeem</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3 text-white">Billing address</h4>
+
+          <form class="text-white">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="firstName" required />
+                <label for="firstName"> First Name </label>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="lastName" required />
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" />
+              <label for="email">Email</label>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control" id="address" required />
+              <label for="address">Address</label>
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="counntry">Country</label>
+                <select id="country" class="form-select d-block w-100">
+                  <option value="">Choose....</option>
+                  <option>United States</option>
+                  <option>Vietnam</option>
+                  <option>England</option>
+                  <option>Taiwan</option>
+                </select>
+              </div>
+              <!-- end country select  -->
+              <div class="col-md-4 mb-3">
+                <label for="state">State</label>
+
+                <select id="state" class="form-select d-block w-100">
+                  <option value="">Choose.....</option>
+                  <option value="">New York</option>
+                  <option value="">Hanoi</option>
+                </select>
+              </div>
+              <!-- end state select  -->
+              <div class="col-md-3 mb-3">
+                <label for="zipcode">Zipcode</label>
+                <input type="text" class="form-control" id="zipcode" />
+              </div>
+            </div>
+            <!-- end row country  -->
+            <div class="custom-control form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="same-address" />
+              <label for="same-address" class="form-check-label text-white">
+                Shipping address is the same as my billing address
+              </label>
+            </div>
+            <div class="custom-control form-check">
+              <input type="checkbox" class="form-check-input" id="save-information" />
+              <label for="save-infomation" class="form-check-label">
+                Save my address infomation
+              </label>
+            </div>
+            <!-- end billing section  -->
+            <h3 class="mb-3 mt-3">Payment</h3>
+            <div class="d-block-my-3">
+              <div class="custom-control form-check">
+                <input
+                  id="creditcard"
+                  name="paymentMethod"
+                  type="radio"
+                  class="form-check-input"
+                />
+
+                <label for="creditcard" class="form-check-label"> Credit card </label>
+              </div>
+
+              <div class="custom-control form-check">
+                <input
+                  checked
+                  id="debitcard"
+                  name="paymentMethod"
+                  type="radio"
+                  class="form-check-input"
+                />
+
+                <label for="debitcard" class="form-check-label"> Debit </label>
+              </div>
+
+              <div class="custom-control form-check">
+                <input
+                  checked
+                  id="paypal"
+                  name="paymentMethod"
+                  type="radio"
+                  class="form-check-input"
+                />
+
+                <label for="paypal" class="form-check-label"> Paypal </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 my-3">
+                <input type="text" id="cardholder" class="form-control" />
+                <label for="cardholder"> Name of card holder </label>
+              </div>
+
+              <div class="col-md-6 my-3">
+                <input type="text" class="form-control" id="cardnumber" />
+                <label for="cardnumber">Card number</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <input type="text" id="expirationdate" class="form-control" />
+                <label for="expirationdate"> Expiration </label>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <input type="text" id="securitycode" class="form-control" />
+                <label for="securitycode">CVC/CCV</label>
+              </div>
+            </div>
+            <!-- end payment section  -->
+            <div class="row px-2">
+              <button type="submit" class="btn btn-primary btn-lg btn-lock">
+                Submit
+              </button>
+            </div>
+            <!-- end payment section  -->
+          </form>
+        </div>
+      </div>
+      <!-- end cart  -->
+    </div>
+    <!-- end checkout section  -->
+
+    <!-- load jquery trước khi load bootstrap, nếu dùng dropdown thì chỉ cần bootstrap.bundle.min.js  -->
+    <script src="../jquery-3.6.0.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
